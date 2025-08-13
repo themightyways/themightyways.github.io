@@ -1,0 +1,311 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mighty Ways | Artes Marciales en Las Vegas</title>
+  <meta name="description" content="Mighty Ways: clases de artes marciales para niños, jóvenes y adultos en Las Vegas. Programas Leadership y Legacy, inscripción rápida y horarios flexibles." />
+  <meta property="og:title" content="Mighty Ways | Artes Marciales en Las Vegas" />
+  <meta property="og:description" content="Clases de Taekwondo y programas formativos. Inscripciones abiertas. ¡Reserva tu cupo!" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tudominio.com" />
+  <meta name="theme-color" content="#0ea5e9" />
+
+  <style>
+    :root{
+      --bg:#0b0c10;          /* fondo oscuro elegante */
+      --panel:#111318;       /* paneles */
+      --card:#151823;        /* tarjetas */
+      --muted:#9aa3b2;      /* texto secundario */
+      --text:#e6eefb;        /* texto principal */
+      --brand:#00d4ff;       /* acento cian */
+      --brand-2:#7c3aed;     /* acento violeta */
+      --ok:#10b981;          /* verde */
+      --warn:#f59e0b;        /* ámbar */
+      --danger:#ef4444;      /* rojo */
+      --radius:20px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:radial-gradient(1200px 800px at 10% -10%,rgba(124,58,237,.25),transparent 60%),radial-gradient(1000px 600px at 110% 10%,rgba(0,212,255,.12),transparent 50%),var(--bg);color:var(--text);font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, 'Helvetica Neue', Arial, 'Apple Color Emoji','Segoe UI Emoji';}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+
+    /* Layout */
+    .container{width:min(1140px, 92%);margin-inline:auto}
+    header{position:sticky;top:0;backdrop-filter: saturate(180%) blur(8px);background:rgba(11,12,16,.6);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 6px 18px rgba(124,58,237,.35)}
+    .brand h1{font-size:1.05rem;margin:0;letter-spacing:.4px}
+    .nav a.btn{margin-left:10px}
+
+    .btn{display:inline-block;padding:12px 18px;border-radius:14px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0b0c10;font-weight:700;box-shadow:0 6px 18px rgba(0,212,255,.25);transition:transform .15s ease, box-shadow .2s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(124,58,237,.35)}
+    .btn-outline{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.18)}
+
+    /* Hero */
+    .hero{padding:64px 0 36px}
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+    .pill{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.14);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:.85rem}
+    .hero h2{font-size:clamp(2rem,4.8vw,3.4rem);line-height:1.05;margin:.6rem 0 .5rem}
+    .hero p{color:var(--muted);font-size:1.07rem;max-width:56ch}
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .hero-card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);padding:18px;border-radius:var(--radius);box-shadow:var(--shadow)}
+
+    /* Stats */
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px 0}
+    .stat{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:18px;text-align:center}
+    .stat h3{margin:0;font-size:1.6rem}
+    .stat p{margin:.35rem 0 0;color:var(--muted);font-size:.9rem}
+
+    /* Sections */
+    section{padding:66px 0}
+    .section-title{font-size:1.8rem;margin:0 0 10px}
+    .section-sub{color:var(--muted);margin:0 0 22px}
+
+    /* Cards grid */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:20px;padding:20px;box-shadow:var(--shadow)}
+    .card h4{margin:0 0 6px}
+    .price{font-weight:800;font-size:1.4rem}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;font-size:.75rem;border:1px solid rgba(255,255,255,.18);color:var(--muted)}
+
+    /* Schedule */
+    table{width:100%;border-collapse:separate;border-spacing:0 10px}
+    th,td{text-align:left;padding:14px 16px}
+    thead th{color:var(--muted);font-weight:600;border-bottom:1px solid rgba(255,255,255,.08)}
+    tbody tr{background:var(--panel);border:1px solid rgba(255,255,255,.06)}
+    tbody tr td:first-child{border-top-left-radius:14px;border-bottom-left-radius:14px}
+    tbody tr td:last-child{border-top-right-radius:14px;border-bottom-right-radius:14px}
+
+    /* Instructors */
+    .instructors{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .avatar{width:72px;height:72px;border-radius:18px;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
+    .instructor{display:flex;gap:16px;align-items:flex-start}
+
+    /* FAQ */
+    details{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}
+    details+details{margin-top:10px}
+    summary{cursor:pointer;font-weight:600}
+    summary::-webkit-details-marker{display:none}
+
+    /* Footer */
+    footer{border-top:1px solid rgba(255,255,255,.06);padding:28px 0;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-grid{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .instructors{grid-template-columns:1fr}
+      .stats{grid-template-columns:repeat(2,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Mighty Ways">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>Mighty Ways</h1>
+      </a>
+      <nav>
+        <a href="#programas" class="btn btn-outline">Programas</a>
+        <a href="#inscripcion" class="btn">Inscribirme</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="container hero-grid">
+      <div>
+        <span class="pill">Inscripciones abiertas · Cupos limitados</span>
+        <h2>Artes marciales para crecer fuerte, seguro y con propósito.</h2>
+        <p>Clases formativas para niños, jóvenes y adultos en Las Vegas. Metodología moderna, enfoque en carácter, disciplina y habilidades para la vida. ¡Únete a la familia Mighty!</p>
+        <div class="cta">
+          <a class="btn" href="#inscripcion">Inscribirme ahora</a>
+          <a class="btn btn-outline" href="https://wa.me/17025550123" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="hero-card" style="margin-top:16px">
+          <strong>Ubicación:</strong> 8558 W Lake Mead Blvd, Las Vegas · <span class="badge">Estacionamiento gratis</span>
+        </div>
+      </div>
+      <div>
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1579762715118-a6f1d4b934f1?q=80&w=1200&auto=format&fit=crop" alt="Clases de artes marciales" />
+          <small style="display:block;color:var(--muted);margin-top:8px">Foto referencial</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="container stats">
+    <div class="stat"><h3>3× / semana</h3><p>Ritmo óptimo para progresar</p></div>
+    <div class="stat"><h3>100%</h3><p>Enfoque en seguridad</p></div>
+    <div class="stat"><h3>+5</h3><p>Programas por edades</p></div>
+    <div class="stat"><h3>2 min</h3><p>Inscripción online</p></div>
+  </div>
+
+  <!-- PROGRAMAS -->
+  <section id="programas">
+    <div class="container">
+      <h3 class="section-title">Programas</h3>
+      <p class="section-sub">Elige el plan que mejor se adapte a tus metas. Sin permanencia obligatoria.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="badge">Fundadores</div>
+          <h4>Leadership</h4>
+          <p class="price">$175/mes</p>
+          <ul>
+            <li>Hasta 3 clases por semana</li>
+            <li>Uniforme + arma correspondiente</li>
+            <li>Placa y parche de fundador</li>
+            <li>Sin matrícula de inscripción</li>
+          </ul>
+          <a href="#inscripcion" class="btn" style="margin-top:10px">Reservar cupo</a>
+        </div>
+        <div class="card">
+          <div class="badge">Fundadores</div>
+          <h4>Legacy</h4>
+          <p class="price">$200/mes</p>
+          <ul>
+            <li>Hasta 6 clases por semana</li>
+            <li>Uniforme + arma + 1 clase privada</li>
+            <li>10% off en actividades especiales</li>
+            <li>Membresía ATA Legacy</li>
+          </ul>
+          <a href="#inscripcion" class="btn" style="margin-top:10px">Quiero este</a>
+        </div>
+        <div class="card">
+          <div class="badge">Trial</div>
+          <h4>Semana de Prueba</h4>
+          <p class="price">Leadership $34 · Legacy $49</p>
+          <ul>
+            <li>Incluye uniforme</li>
+            <li>Acceso a clases del programa</li>
+            <li>Repetible según disponibilidad</li>
+          </ul>
+          <a href="#inscripcion" class="btn" style="margin-top:10px">Probar ahora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HORARIOS -->
+  <section id="horarios">
+    <div class="container">
+      <h3 class="section-title">Horarios (ejemplo)</h3>
+      <p class="section-sub">Ajusta estos horarios según tu programación real.</p>
+      <div class="card" style="overflow:auto">
+        <table>
+          <thead>
+            <tr><th>Programa</th><th>Lun</th><th>Mié</th><th>Vie</th><th>Sáb</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Tigres (4–6)</td><td>4:30–5:00 pm</td><td>4:30–5:00 pm</td><td>—</td><td>10:00–10:30 am</td></tr>
+            <tr><td>Kids (7–9)</td><td>5:00–5:45 pm</td><td>5:00–5:45 pm</td><td>5:00–5:45 pm</td><td>10:30–11:15 am</td></tr>
+            <tr><td>Jr/Teens</td><td>6:00–6:45 pm</td><td>6:00–6:45 pm</td><td>6:00–6:45 pm</td><td>11:30–12:15 pm</td></tr>
+            <tr><td>Adultos</td><td>7:00–7:45 pm</td><td>7:00–7:45 pm</td><td>—</td><td>12:30–1:15 pm</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTRUCTORES -->
+  <section id="instructores">
+    <div class="container">
+      <h3 class="section-title">Equipo</h3>
+      <p class="section-sub">Entrenadores certificados, enfoque humano y resultados medibles.</p>
+      <div class="instructors">
+        <div class="card instructor">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <h4>Santiago Aversso</h4>
+            <p class="muted">6° Dan ATA · Campeón mundial multi–liga · Director técnico</p>
+          </div>
+        </div>
+        <div class="card instructor">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <h4>Valeria</h4>
+            <p class="muted">Kinesióloga · Coach de desarrollo · Coordinación académica</p>
+          </div>
+        </div>
+        <div class="card instructor">
+          <div class="avatar" aria-hidden="true"></div>
+          <div>
+            <h4>Staff Mighty</h4>
+            <p class="muted">Equipo en formación · Mentores invitados</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACION -->
+  <section id="ubicacion">
+    <div class="container">
+      <h3 class="section-title">Ubicación</h3>
+      <p class="section-sub">8558 W Lake Mead Blvd, Las Vegas, NV</p>
+      <div class="card">
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px">
+          <!-- Reemplaza el src con tu mapa de Google -->
+          <iframe title="Mapa Mighty Ways" src="https://www.google.com/maps?q=8558%20W%20Lake%20Mead%20Blvd%2C%20Las%20Vegas&output=embed" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSCRIPCION -->
+  <section id="inscripcion">
+    <div class="container">
+      <h3 class="section-title">Inscripción</h3>
+      <p class="section-sub">Completa el formulario para reservar tu cupo. Te contactaremos para confirmar tu primera clase.</p>
+      <div class="card">
+        <!-- ======= Google Forms (reemplaza el src por el de tu formulario) ======= -->
+        <div style="position:relative;padding-bottom:800px;height:0;overflow:auto;border-radius:16px">
+          <iframe title="Formulario de inscripción" src="https://docs.google.com/forms/d/e/1FAIpQLSf-placeholder/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" style="position:absolute;top:0;left:0;width:100%;height:100%">Cargando…</iframe>
+        </div>
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="mailto:hola@mightyways.com?subject=Quiero%20inscribirme%20en%20Mighty%20Ways">También quiero inscribirme por email</a>
+          <a class="btn btn-outline" href="https://wa.me/17025550123" target="_blank" rel="noopener">Prefiero WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <h3 class="section-title">Preguntas frecuentes</h3>
+      <details>
+        <summary>¿Necesito experiencia previa?</summary>
+        <p style="color:var(--muted)">No, tenemos niveles para principiantes y avanzados por edades. Tu primera clase incluye evaluación y acompañamiento.</p>
+      </details>
+      <details>
+        <summary>¿Hay contrato o permanencia?</summary>
+        <p style="color:var(--muted)">No exigimos permanencia. Puedes cambiar de plan o pausar con 10 días de aviso.</p>
+      </details>
+      <details>
+        <summary>¿Cómo pago?</summary>
+        <p style="color:var(--muted)">Aceptamos tarjeta y débito. Para fundadores hay beneficios exclusivos y matrícula bonificada.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
+      <small>© <span id="y"></span> Mighty Ways. Todos los derechos reservados.</small>
+      <small><a href="#top">Volver arriba</a></small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
