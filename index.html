@@ -1,47 +1,50 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mighty Ways | Artes Marciales en Las Vegas</title>
-  <meta name="description" content="Mighty Ways: clases de artes marciales para niños, jóvenes y adultos en Las Vegas. Programas Leadership y Legacy, inscripción rápida y horarios flexibles." />
-  <meta property="og:title" content="Mighty Ways | Artes Marciales en Las Vegas" />
-  <meta property="og:description" content="Clases de Taekwondo y programas formativos. Inscripciones abiertas. ¡Reserva tu cupo!" />
+  <title>Mighty Ways | MAT & LAB</title>
+  <meta name="description" content="Mighty Ways: MAT (martial arts for kids, teens, and adults) and LAB (creative branding & merch). Mobile programs across Henderson & Las Vegas. Book a class or start a project." />
+  <meta property="og:title" content="Mighty Ways | MAT & LAB" />
+  <meta property="og:description" content="Mobile martial arts programs + creative branding. Serving Henderson & Las Vegas." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://tudominio.com" />
-  <meta name="theme-color" content="#0ea5e9" />
+  <meta property="og:url" content="https://themightyways.com" />
+  <meta name="theme-color" content="#0f172a" />
+
+  <!-- NOTE: Place the two image files in your repo under /assets and update the src below if you change folder names.
+       - Hero photo:  assets/hero-kids.jpg   (use the casual class photo you shared)
+       - Dragon logo: assets/mighty-dragon.png (use the round dragon face logo)
+  -->
 
   <style>
     :root{
-      --bg:#0b0c10;          /* fondo oscuro elegante */
-      --panel:#111318;       /* paneles */
-      --card:#151823;        /* tarjetas */
-      --muted:#9aa3b2;      /* texto secundario */
-      --text:#e6eefb;        /* texto principal */
-      --brand:#00d4ff;       /* acento cian */
-      --brand-2:#7c3aed;     /* acento violeta */
-      --ok:#10b981;          /* verde */
-      --warn:#f59e0b;        /* ámbar */
-      --danger:#ef4444;      /* rojo */
-      --radius:20px;
-      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --bg:#0b0c10;         /* dark background */
+      --panel:#0f1220;      /* panels */
+      --card:#111426;       /* cards */
+      --text:#e6eefb;       /* main text */
+      --muted:#99a3b3;      /* secondary text */
+      --brand:#f5b700;      /* gold (logo) */
+      --brand-2:#0b3a67;    /* navy (logo) */
+      --accent:#00d4ff;     /* subtle cyan accent */
+      --radius:20px; --shadow:0 10px 30px rgba(0,0,0,.35);
     }
     *{box-sizing:border-box}
-    html,body{margin:0;background:radial-gradient(1200px 800px at 10% -10%,rgba(124,58,237,.25),transparent 60%),radial-gradient(1000px 600px at 110% 10%,rgba(0,212,255,.12),transparent 50%),var(--bg);color:var(--text);font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, 'Helvetica Neue', Arial, 'Apple Color Emoji','Segoe UI Emoji';}
+    html,body{margin:0;background:radial-gradient(1200px 800px at 10% -10%,rgba(245,183,0,.18),transparent 60%),radial-gradient(1000px 600px at 110% 10%,rgba(0,212,255,.10),transparent 50%),var(--bg);color:var(--text);font-family:ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, 'Helvetica Neue', Arial;}
     a{color:inherit;text-decoration:none}
     img{max-width:100%;display:block}
+    .container{width:min(1140px,92%);margin-inline:auto}
 
-    /* Layout */
-    .container{width:min(1140px, 92%);margin-inline:auto}
-    header{position:sticky;top:0;backdrop-filter: saturate(180%) blur(8px);background:rgba(11,12,16,.6);border-bottom:1px solid rgba(255,255,255,.06);z-index:50}
+    /* Header */
+    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(8px);background:rgba(11,12,16,.65);border-bottom:1px solid rgba(255,255,255,.06);z-index:40}
     .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
     .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--brand-2));box-shadow:0 6px 18px rgba(124,58,237,.35)}
+    .logo{width:42px;height:42px;border-radius:12px;background:var(--brand);overflow:hidden;display:grid;place-items:center}
+    .brand img{width:100%;height:100%;object-fit:cover}
     .brand h1{font-size:1.05rem;margin:0;letter-spacing:.4px}
     .nav a.btn{margin-left:10px}
 
-    .btn{display:inline-block;padding:12px 18px;border-radius:14px;background:linear-gradient(135deg,var(--brand),var(--brand-2));color:#0b0c10;font-weight:700;box-shadow:0 6px 18px rgba(0,212,255,.25);transition:transform .15s ease, box-shadow .2s}
-    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(124,58,237,.35)}
+    .btn{display:inline-block;padding:12px 18px;border-radius:14px;background:linear-gradient(135deg,var(--brand),#ffd666);color:#0b0c10;font-weight:800;box-shadow:0 6px 18px rgba(245,183,0,.3);transition:transform .15s ease, box-shadow .2s}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(245,183,0,.45)}
     .btn-outline{background:transparent;color:var(--text);border:1px solid rgba(255,255,255,.18)}
 
     /* Hero */
@@ -49,40 +52,30 @@
     .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
     .pill{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.14);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:.85rem}
     .hero h2{font-size:clamp(2rem,4.8vw,3.4rem);line-height:1.05;margin:.6rem 0 .5rem}
-    .hero p{color:var(--muted);font-size:1.07rem;max-width:56ch}
-    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+    .hero p{color:var(--muted);font-size:1.06rem;max-width:58ch}
     .hero-card{background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);padding:18px;border-radius:var(--radius);box-shadow:var(--shadow)}
 
     /* Stats */
     .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding:22px 0}
     .stat{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:18px;text-align:center}
-    .stat h3{margin:0;font-size:1.6rem}
+    .stat h3{margin:0;font-size:1.55rem}
     .stat p{margin:.35rem 0 0;color:var(--muted);font-size:.9rem}
 
-    /* Sections */
     section{padding:66px 0}
     .section-title{font-size:1.8rem;margin:0 0 10px}
     .section-sub{color:var(--muted);margin:0 0 22px}
 
-    /* Cards grid */
     .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
     .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:20px;padding:20px;box-shadow:var(--shadow)}
     .card h4{margin:0 0 6px}
-    .price{font-weight:800;font-size:1.4rem}
     .badge{display:inline-block;padding:6px 10px;border-radius:999px;font-size:.75rem;border:1px solid rgba(255,255,255,.18);color:var(--muted)}
 
-    /* Schedule */
-    table{width:100%;border-collapse:separate;border-spacing:0 10px}
-    th,td{text-align:left;padding:14px 16px}
-    thead th{color:var(--muted);font-weight:600;border-bottom:1px solid rgba(255,255,255,.08)}
-    tbody tr{background:var(--panel);border:1px solid rgba(255,255,255,.06)}
-    tbody tr td:first-child{border-top-left-radius:14px;border-bottom-left-radius:14px}
-    tbody tr td:last-child{border-top-right-radius:14px;border-bottom-right-radius:14px}
+    /* Two paths */
+    .paths{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
 
     /* Instructors */
-    .instructors{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-    .avatar{width:72px;height:72px;border-radius:18px;background:linear-gradient(135deg,var(--brand),var(--brand-2))}
-    .instructor{display:flex;gap:16px;align-items:flex-start}
+    .instructors{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .avatar{width:72px;height:72px;border-radius:18px;background:#fff;overflow:hidden}
 
     /* FAQ */
     details{background:var(--panel);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px}
@@ -90,14 +83,13 @@
     summary{cursor:pointer;font-weight:600}
     summary::-webkit-details-marker{display:none}
 
-    /* Footer */
     footer{border-top:1px solid rgba(255,255,255,.06);padding:28px 0;color:var(--muted)}
 
-    /* Responsive */
     @media (max-width: 980px){
       .hero-grid{grid-template-columns:1fr}
       .grid{grid-template-columns:1fr}
       .instructors{grid-template-columns:1fr}
+      .paths{grid-template-columns:1fr}
       .stats{grid-template-columns:repeat(2,1fr)}
     }
   </style>
@@ -107,12 +99,14 @@
   <header>
     <div class="container nav">
       <a class="brand" href="#top" aria-label="Mighty Ways">
-        <div class="logo" aria-hidden="true"></div>
+        <div class="logo"><img src="assets/mighty-dragon.png" alt="Mighty Ways dragon logo" /></div>
         <h1>Mighty Ways</h1>
       </a>
       <nav>
-        <a href="#programas" class="btn btn-outline">Programas</a>
-        <a href="#inscripcion" class="btn">Inscribirme</a>
+        <a href="#mat" class="btn btn-outline">MAT</a>
+        <a href="#lab" class="btn btn-outline">LAB</a>
+        <a href="#faq" class="btn btn-outline">FAQ</a>
+        <a href="#enroll" class="btn">Enroll</a>
       </nav>
     </div>
   </header>
@@ -121,158 +115,183 @@
   <section class="hero" id="top">
     <div class="container hero-grid">
       <div>
-        <span class="pill">Inscripciones abiertas · Cupos limitados</span>
-        <h2>Artes marciales para crecer fuerte, seguro y con propósito.</h2>
-        <p>Clases formativas para niños, jóvenes y adultos en Las Vegas. Metodología moderna, enfoque en carácter, disciplina y habilidades para la vida. ¡Únete a la familia Mighty!</p>
+        <span class="pill">Serving Henderson & Las Vegas · Mobile programs</span>
+        <h2>Empowering people through movement and creativity.</h2>
+        <p>Mighty Ways brings the positive values of martial arts to schools, parks, community centers and events — and offers creative branding for martial-arts inspired projects. Two paths, one mission: build discipline, confidence and community.</p>
         <div class="cta">
-          <a class="btn" href="#inscripcion">Inscribirme ahora</a>
-          <a class="btn btn-outline" href="https://wa.me/17025550123" target="_blank" rel="noopener">WhatsApp</a>
+          <!-- Replace the form link below with your Google Form URL -->
+          <a class="btn" href="#enroll">Book a class</a>
+          <!-- Instagram is commonly used in the US; keep WhatsApp as a secondary option -->
+          <a class="btn btn-outline" href="https://instagram.com/mightyways" target="_blank" rel="noopener">DM on Instagram</a>
         </div>
         <div class="hero-card" style="margin-top:16px">
-          <strong>Ubicación:</strong> 8558 W Lake Mead Blvd, Las Vegas · <span class="badge">Estacionamiento gratis</span>
+          <strong>Contact:</strong> <a href="mailto:mightywaysthe@gmail.com">mightywaysthe@gmail.com</a> · WhatsApp (optional): <a href="https://wa.me/17024434631" target="_blank" rel="noopener">+1 702 443 4631</a>
         </div>
       </div>
       <div>
         <div class="hero-card">
-          <img src="https://images.unsplash.com/photo-1579762715118-a6f1d4b934f1?q=80&w=1200&auto=format&fit=crop" alt="Clases de artes marciales" />
-          <small style="display:block;color:var(--muted);margin-top:8px">Foto referencial</small>
+          <!-- Replace with your uploaded class photo -->
+          <img src="assets/hero-kids.jpg" alt="Kids practicing martial arts with respect" />
+          <small style="display:block;color:var(--muted);margin-top:8px">Real class moments · Respect & focus</small>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STATS -->
+  <!-- STATS / PILLARS -->
   <div class="container stats">
-    <div class="stat"><h3>3× / semana</h3><p>Ritmo óptimo para progresar</p></div>
-    <div class="stat"><h3>100%</h3><p>Enfoque en seguridad</p></div>
-    <div class="stat"><h3>+5</h3><p>Programas por edades</p></div>
-    <div class="stat"><h3>2 min</h3><p>Inscripción online</p></div>
+    <div class="stat"><h3>1–3× / week</h3><p>Start with once a week; grow at your pace</p></div>
+    <div class="stat"><h3>100%</h3><p>Safety-first · Life skills: communication, discipline, confidence</p></div>
+    <div class="stat"><h3>Age 3+</h3><p>Multiple age-based programs</p></div>
+    <div class="stat"><h3>2 min</h3><p>Online enrollment</p></div>
   </div>
 
-  <!-- PROGRAMAS -->
-  <section id="programas">
+  <!-- TWO PATHS: MAT & LAB -->
+  <section class="paths" id="mat">
     <div class="container">
-      <h3 class="section-title">Programas</h3>
-      <p class="section-sub">Elige el plan que mejor se adapte a tus metas. Sin permanencia obligatoria.</p>
+      <h3 class="section-title">Mighty Ways MAT</h3>
+      <p class="section-sub">Recreational martial arts for kids, teens and adults — wherever your community is.</p>
       <div class="grid">
         <div class="card">
-          <div class="badge">Fundadores</div>
-          <h4>Leadership</h4>
-          <p class="price">$175/mes</p>
+          <div class="badge">Ages 3–6</div>
+          <h4>Early Skills</h4>
+          <p>Short, playful classes to build coordination, listening, respect and confidence.</p>
           <ul>
-            <li>Hasta 3 clases por semana</li>
-            <li>Uniforme + arma correspondiente</li>
-            <li>Placa y parche de fundador</li>
-            <li>Sin matrícula de inscripción</li>
+            <li>Schools, parks & community centers</li>
+            <li>Parent & child friendly</li>
+            <li>No gear needed to start</li>
           </ul>
-          <a href="#inscripcion" class="btn" style="margin-top:10px">Reservar cupo</a>
         </div>
         <div class="card">
-          <div class="badge">Fundadores</div>
-          <h4>Legacy</h4>
-          <p class="price">$200/mes</p>
+          <div class="badge">Ages 7–12</div>
+          <h4>Kids Program</h4>
+          <p>Foundations of self-defense, focus, discipline and teamwork with age-appropriate drills.</p>
           <ul>
-            <li>Hasta 6 clases por semana</li>
-            <li>Uniforme + arma + 1 clase privada</li>
-            <li>10% off en actividades especiales</li>
-            <li>Membresía ATA Legacy</li>
+            <li>After‑school & weekend options</li>
+            <li>Progress you can see</li>
+            <li>Try a class first</li>
           </ul>
-          <a href="#inscripcion" class="btn" style="margin-top:10px">Quiero este</a>
         </div>
         <div class="card">
-          <div class="badge">Trial</div>
-          <h4>Semana de Prueba</h4>
-          <p class="price">Leadership $34 · Legacy $49</p>
+          <div class="badge">Teens & Adults</div>
+          <h4>Teens / Adults</h4>
+          <p>Fitness, stress‑relief and practical self-defense in a welcoming environment.</p>
           <ul>
-            <li>Incluye uniforme</li>
-            <li>Acceso a clases del programa</li>
-            <li>Repetible según disponibilidad</li>
+            <li>Beginner friendly</li>
+            <li>Flexible frequency (1–3x/week)</li>
+            <li>Private & small‑group options</li>
           </ul>
-          <a href="#inscripcion" class="btn" style="margin-top:10px">Probar ahora</a>
         </div>
+      </div>
+
+      <div class="grid" style="margin-top:18px">
+        <div class="card">
+          <div class="badge">Private & Small Groups</div>
+          <h4>Personalized Training</h4>
+          <p>One‑on‑one or small groups tailored to your goals and schedule.</p>
+          <ul>
+            <li>Home, park or community center</li>
+            <li>Custom curriculum</li>
+            <li>All equipment provided</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="badge">One‑off Classes & Events</div>
+          <h4>Birthdays · Fairs · Festivals</h4>
+          <p>Fun, high‑energy classes to celebrate and engage your community.</p>
+          <ul>
+            <li>Turn‑key sessions (we bring everything)</li>
+            <li>Short demos or full workshops</li>
+            <li>Perfect for schools & HOA events</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="badge">Schools & Centers</div>
+          <h4>On‑site Programs</h4>
+          <p>Recurring classes hosted directly at your school or community center.</p>
+          <ul>
+            <li>Simple setup · No special room required</li>
+            <li>Clear behavior & safety standards</li>
+            <li>We manage sign‑ups & communication</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hero-card" style="margin-top:18px">
+        <strong>Good to know:</strong> you don’t need any equipment to start. We bring mats and training gear. Programs can begin with one class per week and scale.
+      </div>
+
+      <div class="cta" style="margin-top:18px">
+        <a class="btn" href="#enroll">Book a class</a>
+        <a class="btn btn-outline" href="#contact">Partner with us</a>
       </div>
     </div>
   </section>
 
-  <!-- HORARIOS -->
-  <section id="horarios">
+  <section id="lab">
     <div class="container">
-      <h3 class="section-title">Horarios (ejemplo)</h3>
-      <p class="section-sub">Ajusta estos horarios según tu programación real.</p>
-      <div class="card" style="overflow:auto">
-        <table>
-          <thead>
-            <tr><th>Programa</th><th>Lun</th><th>Mié</th><th>Vie</th><th>Sáb</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Tigres (4–6)</td><td>4:30–5:00 pm</td><td>4:30–5:00 pm</td><td>—</td><td>10:00–10:30 am</td></tr>
-            <tr><td>Kids (7–9)</td><td>5:00–5:45 pm</td><td>5:00–5:45 pm</td><td>5:00–5:45 pm</td><td>10:30–11:15 am</td></tr>
-            <tr><td>Jr/Teens</td><td>6:00–6:45 pm</td><td>6:00–6:45 pm</td><td>6:00–6:45 pm</td><td>11:30–12:15 pm</td></tr>
-            <tr><td>Adultos</td><td>7:00–7:45 pm</td><td>7:00–7:45 pm</td><td>—</td><td>12:30–1:15 pm</td></tr>
-          </tbody>
-        </table>
+      <h3 class="section-title">Mighty Ways LAB</h3>
+      <p class="section-sub">Creative support for martial‑arts brands and events.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="badge">Branding</div>
+          <h4>Logos & Visual Identity</h4>
+          <p>Clean, memorable design built for schools, clubs and events.</p>
+        </div>
+        <div class="card">
+          <div class="badge">Digital</div>
+          <h4>Web & Social</h4>
+          <p>Landing pages, social media kits and content templates ready to use.</p>
+        </div>
+        <div class="card">
+          <div class="badge">Merch</div>
+          <h4>Mockups & Apparel</h4>
+          <p>Uniform patches, tees and accessories — mockups included.</p>
+        </div>
+      </div>
+      <div class="cta" style="margin-top:18px">
+        <a class="btn btn-outline" href="mailto:mightywaysthe@gmail.com?subject=LAB%20project%20inquiry">Start a LAB project</a>
       </div>
     </div>
   </section>
 
-  <!-- INSTRUCTORES -->
-  <section id="instructores">
+  <!-- TEAM -->
+  <section id="team">
     <div class="container">
-      <h3 class="section-title">Equipo</h3>
-      <p class="section-sub">Entrenadores certificados, enfoque humano y resultados medibles.</p>
+      <h3 class="section-title">Team</h3>
+      <p class="section-sub">Qualified instructors · Human approach · Measurable results.</p>
       <div class="instructors">
-        <div class="card instructor">
-          <div class="avatar" aria-hidden="true"></div>
+        <div class="card" style="display:flex;gap:16px;align-items:flex-start">
+          <div class="avatar"><img src="assets/mighty-dragon.png" alt="Mighty Ways" /></div>
           <div>
-            <h4>Santiago Aversso</h4>
-            <p class="muted">6° Dan ATA · Campeón mundial multi–liga · Director técnico</p>
+            <h4>Ms. Valeria</h4>
+            <p class="muted">4th Degree Taekwon‑Do · Kinesiologist · Martial Arts Educator</p>
           </div>
         </div>
-        <div class="card instructor">
-          <div class="avatar" aria-hidden="true"></div>
+        <div class="card" style="display:flex;gap:16px;align-items:flex-start">
+          <div class="avatar"><img src="assets/mighty-dragon.png" alt="Mighty Ways" /></div>
           <div>
-            <h4>Valeria</h4>
-            <p class="muted">Kinesióloga · Coach de desarrollo · Coordinación académica</p>
-          </div>
-        </div>
-        <div class="card instructor">
-          <div class="avatar" aria-hidden="true"></div>
-          <div>
-            <h4>Staff Mighty</h4>
-            <p class="muted">Equipo en formación · Mentores invitados</p>
+            <h4>Mighty Staff</h4>
+            <p class="muted">Certified assistants · Guest mentors</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- UBICACION -->
-  <section id="ubicacion">
+  <!-- ENROLL / FORM -->
+  <section id="enroll">
     <div class="container">
-      <h3 class="section-title">Ubicación</h3>
-      <p class="section-sub">8558 W Lake Mead Blvd, Las Vegas, NV</p>
+      <h3 class="section-title">Enroll or Request a Class</h3>
+      <p class="section-sub">Complete the quick form and we’ll get back to you within 24 hours.</p>
       <div class="card">
-        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px">
-          <!-- Reemplaza el src con tu mapa de Google -->
-          <iframe title="Mapa Mighty Ways" src="https://www.google.com/maps?q=8558%20W%20Lake%20Mead%20Blvd%2C%20Las%20Vegas&output=embed" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0" loading="lazy"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INSCRIPCION -->
-  <section id="inscripcion">
-    <div class="container">
-      <h3 class="section-title">Inscripción</h3>
-      <p class="section-sub">Completa el formulario para reservar tu cupo. Te contactaremos para confirmar tu primera clase.</p>
-      <div class="card">
-        <!-- ======= Google Forms (reemplaza el src por el de tu formulario) ======= -->
+        <!-- Replace the src with your Google Form link when it’s ready -->
         <div style="position:relative;padding-bottom:800px;height:0;overflow:auto;border-radius:16px">
-          <iframe title="Formulario de inscripción" src="https://docs.google.com/forms/d/e/1FAIpQLSf-placeholder/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" style="position:absolute;top:0;left:0;width:100%;height:100%">Cargando…</iframe>
+          <iframe title="Mighty Ways – Enrollment" src="https://docs.google.com/forms/d/e/1FAIpQLS-placeholder/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" style="position:absolute;top:0;left:0;width:100%;height:100%">Loading…</iframe>
         </div>
         <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn" href="mailto:hola@mightyways.com?subject=Quiero%20inscribirme%20en%20Mighty%20Ways">También quiero inscribirme por email</a>
-          <a class="btn btn-outline" href="https://wa.me/17025550123" target="_blank" rel="noopener">Prefiero WhatsApp</a>
+          <a class="btn" href="mailto:mightywaysthe@gmail.com?subject=Enroll%20with%20Mighty%20Ways">Prefer email</a>
+          <a class="btn btn-outline" href="https://instagram.com/mightyways" target="_blank" rel="noopener">DM on Instagram</a>
         </div>
       </div>
     </div>
@@ -281,26 +300,42 @@
   <!-- FAQ -->
   <section id="faq">
     <div class="container">
-      <h3 class="section-title">Preguntas frecuentes</h3>
+      <h3 class="section-title">Frequently Asked Questions</h3>
       <details>
-        <summary>¿Necesito experiencia previa?</summary>
-        <p style="color:var(--muted)">No, tenemos niveles para principiantes y avanzados por edades. Tu primera clase incluye evaluación y acompañamiento.</p>
+        <summary>Do I need any equipment to start?</summary>
+        <p style="color:var(--muted)">No. We bring mats and training gear. Comfortable clothing and water are enough for the first session.</p>
       </details>
       <details>
-        <summary>¿Hay contrato o permanencia?</summary>
-        <p style="color:var(--muted)">No exigimos permanencia. Puedes cambiar de plan o pausar con 10 días de aviso.</p>
+        <summary>Where do classes take place?</summary>
+        <p style="color:var(--muted)">We are mobile across Henderson and Las Vegas: schools, parks, community centers, HOAs, private homes and events.</p>
       </details>
       <details>
-        <summary>¿Cómo pago?</summary>
-        <p style="color:var(--muted)">Aceptamos tarjeta y débito. Para fundadores hay beneficios exclusivos y matrícula bonificada.</p>
+        <summary>Is there a contract or long‑term commitment?</summary>
+        <p style="color:var(--muted)">No long‑term contracts. Start with once a week; increase frequency as you go.</p>
       </details>
+      <details>
+        <summary>Can we host a one‑time class (e.g., birthday or festival)?</summary>
+        <p style="color:var(--muted)">Yes! We offer turnkey single‑event classes and demos. Tell us your date and venue — we’ll handle the rest.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT (anchor) -->
+  <section id="contact">
+    <div class="container">
+      <h3 class="section-title">Contact</h3>
+      <div class="card">
+        <p>Email: <a href="mailto:mightywaysthe@gmail.com">mightywaysthe@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/mightyways" target="_blank" rel="noopener">@mightyways</a></p>
+        <p>WhatsApp (optional): <a href="https://wa.me/17024434631" target="_blank" rel="noopener">+1 702 443 4631</a></p>
+      </div>
     </div>
   </section>
 
   <footer>
     <div class="container" style="display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap">
-      <small>© <span id="y"></span> Mighty Ways. Todos los derechos reservados.</small>
-      <small><a href="#top">Volver arriba</a></small>
+      <small>© <span id="y"></span> Mighty Ways · MAT & LAB · Henderson & Las Vegas</small>
+      <small><a href="#top">Back to top</a></small>
     </div>
   </footer>
 
